@@ -3,9 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="style.css"> 
+  <title>Calculator</title>
 </head>
 <body>
+  <h1>Calculator</h1> 
+  <div class="container">
+    <div class="calculator">
+      <input type="text" id="display">
   
+      <div class="calculator__btns">
+        <button class="function-btn clear-btn">C</button>
+        <button class="function-btn change-btn">+/-</button>
+        <button class="function-btn porcentage-btn">%</button>
+        <button class="operator-btn divisor-btn">÷</button>  
+        <button onclick="display.value += '7'">7</button> 
+        <button onclick="display.value += '8'">8</button> 
+        <button onclick="display.value += '9'">9</button>
+        <button class="operator-btn multiple-btn">x</button> 
+        <button onclick="display.value += '4'">4</button>
+        <button onclick="display.value += '5'">5</button>
+        <button onclick="display.value += '6'">6</button>
+        <button class="operator-btn substraction-btn">-</button>
+        <button onclick="display.value += '1'">1</button>
+        <button onclick="display.value += '2'">2</button>
+        <button onclick="display.value += '3'">3</button>
+        <button class="operator-btn addition-btn">+</button>
+        <button onclick="display.value += '0'">0</button>
+        <button>.</button>
+        <button class="operator-btn equal-btn">=</button>
+      </div>
+  </div>
 </body>
 </html>
