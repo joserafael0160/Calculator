@@ -44,11 +44,11 @@ h1 {
 
 button {
   border-radius: 50%;      
-  border: none;
+  border: none; 
   background-color: #555;  
   color: white;    
-  font-size: 3rem; 
-  cursor: pointer; 
+  font-size: 3rem;  
+  cursor: pointer;  
 }
 
 button:nth-child(17) {
