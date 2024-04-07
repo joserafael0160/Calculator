@@ -12,8 +12,11 @@ const substractionBtn = document.querySelector(".substraction-btn");
 const additionBtn = document.querySelector(".addition-btn"); 
 const equalBtn = document.querySelector(".equal-btn");
 
+const commaBtn = document.querySelector(".comma-btn");
+
 clearBtn.addEventListener("click",()=>{
-  display.value="";   
+  display.value="";  
+  commaBand = false;
 })
 
 
@@ -23,30 +26,45 @@ clearBtn.addEventListener("click",()=>{
 divisorBtn.addEventListener("click",()=>{
   if(comprobation()){
     display.value += "/";
+    commaBand = false;
   }
 })
 
 multipleBtn.addEventListener("click",()=>{
   if(comprobation()){
     display.value += "*";
+    commaBand = false;
   }
 })
 
 substractionBtn.addEventListener("click",()=>{
   if(comprobation()){
     display.value += "-";
+    commaBand = false;
   }
 })
 
 additionBtn.addEventListener("click",()=>{
   if(comprobation()){
     display.value += "+"; 
+    commaBand = false;
   }
 })
 
 equalBtn.addEventListener("click",()=>{
   display.value = eval(display.value); 
 })
+
+commaBtn.addEventListener("click",()=>{
+  let size = display.value.length;
+  let lastElement = display.value[size-1];
+  if(comprobation() && (lastElement !== null) && (lastElement !== ".") && !commaBand){
+    display.value += ".";
+    commaBand = true;
+  }
+})
+let commaBand = false;
+
 function comprobation(){
   let size = display.value.length;
   let lastElement = display.value[size-1]
