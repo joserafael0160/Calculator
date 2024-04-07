@@ -14,6 +14,10 @@ const equalBtn = document.querySelector(".equal-btn");
 
 const commaBtn = document.querySelector(".comma-btn");
 
+
+//checking that there is only one comma in each number
+let commaBand = false;
+
 clearBtn.addEventListener("click",()=>{
   display.value="";  
   commaBand = false;
@@ -63,7 +67,6 @@ commaBtn.addEventListener("click",()=>{
     commaBand = true;
   }
 })
-let commaBand = false;
 
 function comprobation(){
   let size = display.value.length;
