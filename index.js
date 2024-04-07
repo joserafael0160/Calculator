@@ -21,8 +21,19 @@ let commaBand = false;
 clearBtn.addEventListener("click",()=>{
   display.value="";  
   commaBand = false;
-})
+}) 
 
+
+
+
+porcentageBtn.addEventListener("click",()=>{
+  let content = display.value;
+  let size = content.length;
+  let lastElement = content[size-1];
+  if(comprobation() && lastElement !== "." && content !== "" && content !== "0") {
+    display.value = content / 100;
+  } 
+})
 
 
 
@@ -65,13 +76,14 @@ commaBtn.addEventListener("click",()=>{
   if(comprobation() && (lastElement !== ".") && !commaBand){
     if(display.value === "") display.value += "0"; 
     display.value += ".";
-    commaBand = true;
+    commaBand = true; 
   }
 })
 
 function comprobation(){
-  let size = display.value.length;
-  let lastElement = display.value[size-1]
+  let content = display.value;
+  let size = content.length;
+  let lastElement = content[size-1];
   if(!((lastElement==="-") || (lastElement==="*") || (lastElement==="+") || (lastElement==="/"))) return true;
   return false;
 } 
