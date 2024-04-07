@@ -23,6 +23,20 @@ clearBtn.addEventListener("click",()=>{
   commaBand = false;
 }) 
 
+changeBtn.addEventListener("click",()=>{
+  let content = display.value;
+  let size = content.length;
+  let lastElement = content[size-1];  
+  if(content === "") display.value = "-0"; 
+  else if(comprobation() && lastElement !== "."){
+    let number = eval(content); 
+    number = number *- 1;
+    let wordStr = number.toString(); 
+    display.value = wordStr;  
+    
+  }  
+  
+})
 
 
 
@@ -31,7 +45,8 @@ porcentageBtn.addEventListener("click",()=>{
   let size = content.length;
   let lastElement = content[size-1];
   if(comprobation() && lastElement !== "." && content !== "" && content !== "0") {
-    display.value = content / 100;
+    let number = eval(content);
+    display.value = number / 100;
   } 
 })
 
