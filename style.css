@@ -40,13 +40,14 @@ h1 {
 }
 
 button {
-  border-radius: 50%;      
+  border-radius: 6%;           
   border: none; 
   background-color: #555;  
   color: white;     
-  font-size: 3rem;  
+  font-size: 3rem;   
   cursor: pointer;  
   transition: background-color .1s;
+  box-shadow: 2px 3px black;
 }
 
 button:hover {
