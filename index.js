@@ -73,4 +73,4 @@ function comprobation(){
   let lastElement = display.value[size-1]
   if(!((lastElement==="-") || (lastElement==="*") || (lastElement==="+") || (lastElement==="/"))) return true;
   return false;
-}
+} 

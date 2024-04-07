@@ -31,10 +31,7 @@ h1 {
   font-size: 3.5rem; 
   color: #fff;
 }
-.function-btn {
-  background-color: #aaa;      
-  color: #000; 
-}
+
 .calculator__btns{ 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -46,14 +43,43 @@ button {
   border-radius: 50%;      
   border: none; 
   background-color: #555;  
-  color: white;    
+  color: white;     
   font-size: 3rem;  
   cursor: pointer;  
+  transition: background-color .1s;
+}
+
+button:hover {
+  background-color: #6a6a6a;  
+}
+button:active {
+  background-color: #8a8a8a; 
 }
 
 button:nth-child(17) {
   grid-column-start: span 2;
 }
+
+.function-btn {
+  background-color: #aaa;      
+  color: #000; 
+}
+
+.function-btn:hover {
+  background-color: #bbb; 
+} 
+.function-btn:active { 
+  background-color: #ddd; 
+}
+
 .operator-btn { 
   background-color: #d41374;   
 }  
+
+.operator-btn:hover {
+  background-color: #e647a6
+}
+
+.operator-btn:active {
+  background-color: #f869c8; 
+}
