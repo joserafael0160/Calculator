@@ -28,17 +28,17 @@ clearBtn.addEventListener("click",()=>{
 
 
 divisorBtn.addEventListener("click",()=>{
-  if(comprobation()){
+  if(comprobation() && display.value != ""){ 
     display.value += "/";
     commaBand = false;
   }
 })
 
 multipleBtn.addEventListener("click",()=>{
-  if(comprobation()){
+  if(comprobation() && display.value != ""){
     display.value += "*";
     commaBand = false;
-  }
+  } 
 })
 
 substractionBtn.addEventListener("click",()=>{
@@ -49,7 +49,7 @@ substractionBtn.addEventListener("click",()=>{
 })
 
 additionBtn.addEventListener("click",()=>{
-  if(comprobation()){
+  if(comprobation() && display.value != ""){
     display.value += "+"; 
     commaBand = false;
   }
@@ -62,7 +62,8 @@ equalBtn.addEventListener("click",()=>{
 commaBtn.addEventListener("click",()=>{
   let size = display.value.length;
   let lastElement = display.value[size-1];
-  if(comprobation() && (lastElement !== null) && (lastElement !== ".") && !commaBand){
+  if(comprobation() && (lastElement !== ".") && !commaBand){
+    if(display.value === "") display.value += "0"; 
     display.value += ".";
     commaBand = true;
   }
