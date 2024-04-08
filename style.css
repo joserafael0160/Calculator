@@ -5,6 +5,7 @@ body {
 h1 {
   color: #fff;
   font-size: 50px; 
+  height: 5vh;  
 }
 .container {
     margin: 0;
