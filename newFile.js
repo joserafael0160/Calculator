@@ -1,1 +1,0 @@
-clearBtn.addEventListener("click", () =>  > );
