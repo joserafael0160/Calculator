@@ -1,22 +1,8 @@
-console.log("HOla");
-/*
-//function buttons
-const display = document.getElementById("display")
-const clearBtn = document.querySelector(".clear-btn");
-const changeBtn = document.querySelector(".change-btn");
-const porcentageBtn = document.querySelector(".porcentage-btn");
+import { display, clearBtn, changeBtn, porcentageBtn, divisorBtn, multipleBtn, substractionBtn, additionBtn, equalBtn, commaBtn } from "./consts.js"; 
 
-//operator buttons
-const divisorBtn = document.querySelector(".divisor-btn"); 
-const multipleBtn = document.querySelector(".multiple-btn"); 
-const substractionBtn = document.querySelector(".substraction-btn"); 
-const additionBtn = document.querySelector(".addition-btn"); 
-const equalBtn = document.querySelector(".equal-btn");
+import { comprobation } from "./functions.js";
 
-const commaBtn = document.querySelector(".comma-btn");
-
-
-//checking that there is only one comma in each number
+// Checking that there is only one comma in each number
 let commaBand = false;
 
 clearBtn.addEventListener("click",()=>{
@@ -38,8 +24,6 @@ changeBtn.addEventListener("click",()=>{
   
 })
 
-
-
 porcentageBtn.addEventListener("click",()=>{
   let content = display.value;
   let size = content.length;
@@ -49,10 +33,6 @@ porcentageBtn.addEventListener("click",()=>{
     display.value = number / 100;
   } 
 })
-
-
-
-
 divisorBtn.addEventListener("click",()=>{
   if(comprobation() && display.value != ""){ 
     display.value += "/";
@@ -94,12 +74,3 @@ commaBtn.addEventListener("click",()=>{
     commaBand = true; 
   }
 })
-
-function comprobation(){
-  let content = display.value;
-  let size = content.length;
-  let lastElement = content[size-1];
-  if(!((lastElement==="-") || (lastElement==="*") || (lastElement==="+") || (lastElement==="/"))) return true;
-  return false;
-} 
-*/
