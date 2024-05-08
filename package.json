@@ -2,6 +2,8 @@
   "name": "calculator",
   "private": true,
   "version": "0.0.0",
+  "keywords": [],
+  "license": "ISC",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,26 +11,22 @@
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
-  "devDependencies": {
+  "dependencies": {
     "autoprefixer": "^10.4.19",
     "browserlist": "^1.0.1",
     "cssnano": "^7.0.1",
-    "eslint": "8.57.0",
+    "eslint": "^9.2.0",
     "eslint-config-manzdev": "^0.0.8",
     "gh-pages": "^6.1.1",
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
     "postcss-nesting": "^12.1.2",
     "postcss-purgecss": "^5.0.0",
-    "stylelint": "16.3.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "stylelint": "^16.5.0",
     "stylelint-config-manzdev": "^0.0.18",
     "terser": "^5.31.0",
-    "vite": "^5.2.0",
+    "vite": "^5.2.11",
     "vite-tsconfig-paths": "^4.3.2"
-  },
-  "keywords": [],
-  "license": "ISC",
-  "dependencies": {
-    "rollup-plugin-terser": "^7.0.2"
   }
 }

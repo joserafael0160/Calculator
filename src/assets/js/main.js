@@ -1,4 +1,5 @@
-"use strict"
+console.log("HOla");
+/*
 //function buttons
 const display = document.getElementById("display")
 const clearBtn = document.querySelector(".clear-btn");
@@ -27,13 +28,12 @@ changeBtn.addEventListener("click",()=>{
   let content = display.value;
   let size = content.length;
   let lastElement = content[size-1];  
-  if(content === "") display.value = "-0"; 
+  if(content === "") display.value = "-0";
   else if(comprobation() && lastElement !== "."){
     let number = eval(content); 
     number = number *- 1;
     let wordStr = number.toString(); 
-    display.value = wordStr;  
-    
+    display.value = wordStr;
   }  
   
 })
@@ -102,3 +102,4 @@ function comprobation(){
   if(!((lastElement==="-") || (lastElement==="*") || (lastElement==="+") || (lastElement==="/"))) return true;
   return false;
 } 
+*/

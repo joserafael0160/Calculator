@@ -2,7 +2,7 @@
 	"compilerOptions": {
    	"baseUrl": ".",
 		"paths": {
-      	"@/*": ["src/*"],
+      	"@/*": ["src/js/index.js*"],
 		}
 	}
 }
