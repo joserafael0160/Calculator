@@ -15,6 +15,8 @@ header {
   position:relative;
   height: 15vh;
   padding: 5px;
+  width: 100%;
+  margin-bottom: 20px;
 
   & h1 {
     color: #fff;
@@ -55,6 +57,7 @@ main {
   margin: 10px auto;
   background-color: #222;
   border-radius: 15px;
+  min-width: 295px;
   max-width: 500px; 
   box-sizing: border-box;
   overflow: hidden; 
@@ -95,35 +98,35 @@ main {
         background-color: #8a8a8a; 
       }
 
-      &.function-btn {
-        background-color: #aaa;      
-        color: #000; 
-        
-        &:hover {
-          background-color: #bbb; 
-        }
-
-        &:active { 
-          background-color: #ddd; 
-        } 
-      }
-      
-      &.operator-btn { 
-        background-color: #d41374;   
-        
-        &:hover {
-          background-color: #e647a6;
-        }
-
-        &:active {
-          background-color: #f869c8; 
-        }
-      }  
-
-      &:nth-child(17) {
-        grid-column-start: span 2;
-      }
     }
+    
+    & .function-btn {
+      background-color: #aaa;      
+      color: #000; 
+      
+      &:hover {
+        background-color: #bbb; 
+      }
 
+      &:active { 
+        background-color: #ddd; 
+      } 
+    }
+    
+    & .operator-btn { 
+      background-color: #d41374;   
+      
+      &:hover {
+        background-color: #e647a6;
+      }
+
+      &:active {
+        background-color: #f869c8; 
+      }
+    }  
+
+    & :nth-child(17) {
+      grid-column-start: span 2;
+    }
   }
 }
